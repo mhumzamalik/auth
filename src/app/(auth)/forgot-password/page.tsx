@@ -28,7 +28,6 @@ export default function ForgotPasswordPage() {
 
   const onSubmit = (data: ForgotPasswordInput) => {
     startTransition(async () => {
-      // Simulate calling password reset service
       await new Promise((resolve) => setTimeout(resolve, 1500));
       toast.success(`Instructions sent to ${data.email}`);
       setSuccess(true);
