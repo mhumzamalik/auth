@@ -68,7 +68,7 @@ export function SignupForm() {
         <Input
           id="name"
           type="text"
-          placeholder="John Doe"
+          placeholder="Muhammad Hamza"
           disabled={isPending}
           {...register("name")}
           className={errors.name ? "border-destructive focus:ring-destructive" : ""}

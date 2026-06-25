@@ -107,7 +107,7 @@ export function LoginForm() {
           className="h-4 w-4 rounded border-input text-primary focus:ring-ring bg-background/50 accent-primary cursor-pointer"
         />
         <Label htmlFor="rememberMe" className="text-xs text-muted-foreground/90 font-medium cursor-pointer select-none">
-          Remember me for 30 days
+          Remember me 
         </Label>
       </div>
 

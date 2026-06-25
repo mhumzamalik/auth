@@ -29,7 +29,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
       <main className="flex-1 flex flex-col justify-center items-center px-4 py-16 text-center max-w-5xl mx-auto space-y-12">
         <div className="space-y-4">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-bold text-primary tracking-wider uppercase select-none">
@@ -42,9 +41,6 @@ export default function Home() {
               Built By Muhammad Hamza
             </span>
           </h1>
-          <p className="max-w-2xl mx-auto text-muted-foreground text-base sm:text-lg font-medium leading-relaxed">
-            A secure, modern authentication template leveraging React 19 Server Actions, Auth.js v5, Prisma ORM, MongoDB Atlas, and Tailwind CSS v4 styling.
-          </p>
         </div>
 
         {/* Action Buttons */}
@@ -61,42 +57,8 @@ export default function Home() {
             </Button>
           </Link>
         </div>
-
-        {/* Feature Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full pt-8">
-          <div className="glass-panel p-6 rounded-2xl text-left space-y-3 shadow-lg">
-            <div className="p-2.5 rounded-xl bg-primary/10 text-primary w-fit">
-              <Cpu className="h-5 w-5" />
-            </div>
-            <h3 className="text-lg font-bold">React 19 Server Actions</h3>
-            <p className="text-sm text-muted-foreground/80 font-medium">
-              Zero API endpoints needed for standard operations. Forms are validated via Zod and handled directly inside secure Node Server environments.
-            </p>
-          </div>
-
-          <div className="glass-panel p-6 rounded-2xl text-left space-y-3 shadow-lg">
-            <div className="p-2.5 rounded-xl bg-primary/10 text-primary w-fit">
-              <Shield className="h-5 w-5" />
-            </div>
-            <h3 className="text-lg font-bold">Upstash Redis Limiter</h3>
-            <p className="text-sm text-muted-foreground/80 font-medium">
-              Protects sensitive authentication entrypoints (login, register) from brute-force scripts with automatic local sliding window fallback.
-            </p>
-          </div>
-
-          <div className="glass-panel p-6 rounded-2xl text-left space-y-3 shadow-lg">
-            <div className="p-2.5 rounded-xl bg-primary/10 text-primary w-fit">
-              <Database className="h-5 w-5" />
-            </div>
-            <h3 className="text-lg font-bold">Prisma ORM & MongoDB</h3>
-            <p className="text-sm text-muted-foreground/80 font-medium">
-              Stores credentials securely using 12-round bcrypt salts. Designed explicitly for MongoDB Atlas replica sets.
-            </p>
-          </div>
-        </div>
       </main>
 
-      {/* Footer */}
       <footer className="border-t border-border/40 bg-background/20 py-8 text-center text-xs text-muted-foreground/60 font-semibold">
         <p>&copy; 2026 SECUREAUTH. All rights reserved. Follows modern web engineering guidelines.</p>
       </footer>

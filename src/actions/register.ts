@@ -9,7 +9,6 @@ import { signIn } from "@/auth";
 import { AuthError } from "next-auth";
 
 export async function registerAction(values: RegisterInput) {
-  // Validate request payload
   const validatedFields = RegisterSchema.safeParse(values);
   if (!validatedFields.success) {
     return { error: "Invalid fields." };
@@ -17,7 +16,6 @@ export async function registerAction(values: RegisterInput) {
 
   const { name, email, password } = validatedFields.data;
 
-  // Rate limiting check
   const headersList = await headers();
   const ip = headersList.get("x-forwarded-for")?.split(",")[0] || "127.0.0.1";
   const limitResult = await rateLimit(ip, 5, 60);
